@@ -852,7 +852,6 @@ a {
 
 .preview-overlay {
     position: absolute;
-    inset: 0;
     background: linear-gradient(
         to right,
         rgba(0,0,0,0.88) 0%,
@@ -928,8 +927,6 @@ a {
     padding: 65px 4% 100px;
     margin-top: -55px;
     margin-bottom: -100px;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
 }
 
 .spotlight-scroll::-webkit-scrollbar {
@@ -951,7 +948,6 @@ a {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    inset: 0;
 }
 
 .spotlight-label {
