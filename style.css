@@ -22,9 +22,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
-/* HEADER */
-
 .header {
     position: fixed;
     top: 0;
@@ -67,7 +64,6 @@ a {
     font-weight: bold;
     border-radius: 10px;
     white-space: nowrap;
-    transition: 0.3s;
 }
 
 .nav a:hover,
@@ -111,15 +107,11 @@ a {
     border-radius: 9px;
     font-weight: bold;
     font-size: 16px;
-    transition: 0.3s;
 }
 
 .join-btn:hover {
     background: #0874d5;
 }
-
-/* HERO */
-
 .hero {
     position: relative;
     height: 720px;
@@ -147,7 +139,7 @@ a {
         #00050d 3%,
         rgba(0, 5, 13, 0.94) 23%,
         rgba(0, 5, 13, 0.55) 50%,
-        transparent 85%
+        
     );
 }
 
@@ -242,7 +234,7 @@ a {
     border-radius: 9px;
     font-size: 17px;
     font-weight: bold;
-    transition: 0.3s;
+  
 }
 
 .watch-button:hover {
@@ -259,7 +251,7 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    transition: 0.3s;
+   
 }
 
 .round-button:hover {
@@ -287,7 +279,7 @@ a {
     position: absolute;
     bottom: 25px;
     left: 50%;
-    transform: translateX(-50%);
+    
     z-index: 2;
     display: flex;
     align-items: center;
@@ -646,7 +638,6 @@ a {
     font-size: 12px;
 }
 
-/* TABLET */
 
 @media (max-width: 1100px) {
     .header {
@@ -670,8 +661,6 @@ a {
         width: 55%;
     }
 }
-
-/* MOBILE */
 
 @media (max-width: 700px) {
     .header {
@@ -828,48 +817,8 @@ a {
         right: 0;
     }
 }
-
-/* ==================================
-   FEATURED LANDSCAPE PREVIEW SECTION
-================================== */
-
-.spotlight-section {
-    width: 100%;
-    margin: 35px 0 50px;
-    overflow: hidden;
-}
-
-.spotlight-scroll {
-    display: flex;
-    align-items: stretch;
-    gap: 14px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 10px 4% 20px;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-}
-
-.spotlight-scroll::-webkit-scrollbar {
-    display: none;
-}
-
-/* COMMON CARD */
-
-.spotlight-card {
-    position: relative;
-    flex-shrink: 0;
-    height: 360px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #151b22;
-}
-
-/* POSTER CARDS */
-
 .poster-card {
     width: 235px;
-    /*transition: transform 0.3s;*/
 }
 
 .poster-card img {
@@ -877,22 +826,6 @@ a {
     height: 100%;
     object-fit: cover;
 }
-
-.poster-card:hover {
-    transform: scale(1.03);
-}
-
-.spotlight-label {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: white;
-    color: black;
-    padding: 6px 10px;
-    font-size: 13px;
-    font-weight: bold;
-}
-
 .spotlight-brand {
     position: absolute;
     bottom: 12px;
@@ -901,8 +834,6 @@ a {
     font-weight: bold;
     text-shadow: 1px 2px 5px black;
 }
-
-/* LARGE FEATURED PREVIEW */
 
 .featured-preview {
     width: 860px;
@@ -949,7 +880,6 @@ a {
     position: absolute;
     top: 50%;
     left: 30px;
-    /*transform: translateY(-50%);*/
     width: 55%;
 }
 
@@ -963,48 +893,6 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.episode-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    color: #080d14;
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-size: 17px;
-    font-weight: bold;
-    white-space: nowrap;
-    /*transition: 0.3s;*/
-}
-
-.episode-button:hover {
-    background: #dce8f3;
-}
-
-.preview-circle {
-    width: 55px;
-    height: 55px;
-    background: rgba(255,255,255,0.25);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    transition: 0.3s;
-}
-
-.preview-circle:hover {
-    background: white;
-    color: black;
-}
-
-.preview-rank {
-    margin-top: 17px;
-    color: #24e49b;
-    font-size: 17px;
-    font-weight: bold;
 }
 
 .preview-tags {
@@ -1026,26 +914,6 @@ a {
     background: white;
     color: black;
 }
-
-.watch-free {
-    margin-top: 15px;
-    font-size: 15px;
-}
-
-/* HOVER EFFECT */
-/*
-.featured-preview {
-    transition: transform 0.3s;
-}
-
-
-.featured-preview:hover {
-    transform: scale(1.015);*/
-/* RESPONSIVE */
-
-
-/* SPOTLIGHT HOVER EXPANSION */
-
 .spotlight-section {
     width: 100%;
     margin: 35px 0 50px;
@@ -1075,7 +943,6 @@ a {
     border-radius: 10px;
     overflow: hidden;
     background: #111820;
-    /*transition: width 0.4s ease, flex-basis 0.4s ease;*/
     cursor: pointer;
 }
 
@@ -1085,7 +952,6 @@ a {
     object-fit: cover;
     position: absolute;
     inset: 0;
-    transition: filter 0.3s ease;
 }
 
 .spotlight-label {
@@ -1110,8 +976,6 @@ a {
     bottom: 30px;
     width: 55%;
 }
-
-/* ENLARGE ONLY ON HOVER */
 
 .spotlight-card:hover {
     flex-basis: 860px;
@@ -1187,8 +1051,6 @@ a {
     font-size: 15px;
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 700px) {
     .spotlight-card {
         flex-basis: 170px;
@@ -1229,7 +1091,6 @@ a {
     border: 2px solid #52697b;
     background: #263b4c;
     flex-shrink: 0;
-    transition: 0.3s;
 }
 
 .profile img {
@@ -1241,5 +1102,4 @@ a {
 
 .profile:hover {
     border: 2px solid white;
-    transform: scale(1.08);
 }
