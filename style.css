@@ -458,6 +458,94 @@ a {
 
 /* MOVIE CARDS */
 
+/* FEATURED SERIES HOVER EFFECT */
+
+.movie-card:hover,
+.movie-card:focus-within {
+    top: -45px;
+    left: -55px;
+    width: min(420px, calc(100vw - 40px));
+    height: auto;
+    min-height: 350px;
+    z-index: 50;
+    overflow: visible;
+    background: #111820;
+    border: 1px solid #39434e;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+}
+/* SHOW MOVIE INFORMATION ON HOVER */
+
+.movie-info {
+    display: none;
+    padding: 15px;
+    color: white;
+}
+
+.movie-card:hover .movie-info,
+.movie-card:focus-within .movie-info {
+    display: block;
+}
+
+/* EPISODE DETAILS */
+
+.episode {
+    color: #bfc5cc;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+/* CARD ACTIONS */
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.play-card {
+    background: white;
+    color: black;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.small-round {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    background: #26313d;
+    color: white;
+    cursor: pointer;
+}
+
+/* MOVIE TAGS */
+
+.green-text {
+    color: #1ce783;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.movie-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    color: #c7c7c7;
+    font-size: 12px;
+    margin-bottom: 10px;
+}/
+
+.movie-description {
+    color: #ddd;
+    font-size: 13px;
+}
+
 .movie-card {
     position: absolute;
     top: 0;
@@ -467,7 +555,6 @@ a {
     overflow: hidden;
     border-radius: 10px;
     background: #101820;
-    transition: box-shadow 0.3s;
 }
 
 .movie-image {
@@ -971,4 +1058,9 @@ a {
 
 .profile:hover {
     border: 2px solid white;
+}
+.footer-logo img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
 }
